@@ -1,0 +1,104 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body - Organisation verticale */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilise toute la hauteur de l'écran */
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155); /* Dégradé sombre style cybersécurité */
+    color: #f0f4f8; /* Texte en blanc cassé */
+}
+
+/* Titre en haut */
+header {
+    background: linear-gradient(90deg, #1e293b, #0ea5e9); /* Bleu sombre à bleu électrique */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 3rem; /* Titre plus gros */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(14, 165, 233, 0.7); /* Effet lumineux */
+}
+
+/* Barre de Navigation collée sous le titre */
+nav {
+    background: linear-gradient(90deg, #0ea5e9, #1e293b);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #f0f4f8; /* Blanc cassé */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(14, 165, 233, 0.3); /* Hover avec un léger fond */
+    transform: scale(1.1); /* Effet zoom */
+}
+
+/* Zone de Texte */
+.zone-texte {
+    flex: 1; /* Occupe tout l'espace restant */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 80%; /* Largeur de la zone */
+    background: linear-gradient(135deg, #1e293b, #0f172a); /* Dégradé sombre stylé */
+    color: #e2e8f0; /* Texte blanc-gris */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/* Mentions Légales en bas */
+footer {
+    background: linear-gradient(90deg, #1e293b, #0f172a);
+    color: #94a3b8; /* Gris clair */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border-top: 2px solid #0ea5e9;
+}
+
+footer a {
+    color: #0ea5e9; /* Bleu électrique */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Empêche le défilement */
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #ff3366;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        header::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-color: white transparent transparent transparent;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #444;
+            padding: 10px 20px;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .arrow {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CAZANOVE ROMAIN</h1>
+        <p>Étudiant en 1re année en réseaux et télécommunications</p>
+    </header>
+
+    <nav>
+        <a href="SAE104_RC.html" id="back">
+            <span class="arrow">←</span> Retour
+        </a>
+        <a href="portfolio2.html" id="next">
+            Suite <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <main>
+        <div class="subtitle">Découvrez mon travail et mes projets.</div>
+        <div class="image-section">
+            <img src="https://kairos-data.com/wp-content/uploads/marches-telecommunications.jpg" alt="Image de télécommunications">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Web | <a href="">Mentions Légales</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style pour la section CV */
+        #cv-section {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        #cv-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #cv-image {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #cv-download {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #cv-download:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grand Titre -->
+    <header>
+        <h1>Bienvenue sur Mon Site Web</h1>
+    </header>
+
+    <!-- Barre de Navigation -->
+    <nav>
+        <ul>
+            <li><a href="projet.html">Mes projets</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="SAE104_RC.html">Acceuil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section CV -->
+    <section id="cv-section">
+        <h2>Mon CV</h2>
+        <img id="cv-image" src="C.png"alt="Image de mon CV">
+
+    <br>
+        <a id="cv-download" href="CV_CAZANOVE_R.pdf" download="CV_CAZANOVE_R.pdf">Télécharger mon CV</a>
+    </section>
+
+    <!-- Mentions Légales -->
+    <footer>
+        <p>© 2024 Mon Site Web | <a href="#">Mentions Légales</a></p>
+    </footer>
+</body>
+</html>

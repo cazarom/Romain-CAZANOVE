@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Empêche le défilement */
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #004d7a, #001f33); /* Dégradé bleu */
+            color: white; /* Couleur de texte pour bonne visibilité */
+        }
+
+        header {
+            background-color: #004d7a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        header::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-color: white transparent transparent transparent;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #00334d;
+            padding: 10px 20px;
+            flex-shrink: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .arrow {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .content-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .text-section {
+            max-width: 40%;
+        }
+
+        .text-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc33; /* Couleur pour contraste */
+        }
+
+        .text-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .device-mockup img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #00334d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MES PROJETS</h1>
+       
+    </header>
+
+    <nav>
+        <a href="portfolio3.html" id="back">
+            <span class="arrow">←</span> Retour
+        </a>
+        <a href="portfolio5.html" id="next">
+            Suite <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <main>
+        <div class="content-container">
+            <!-- Texte à gauche -->
+            <div class="text-section">
+                <h2> diaporama de sensibilisation sur l'hygiène informatique</h2>
+                <hr style="margin: 10px 0; border: none; border-top: 2px solid white; width: 50px;">
+                <p>Dans un monde où les cybermenaces sont de plus en plus fréquentes, il est essentiel de comprendre les bonnes pratiques en matière d'hygiène informatique. Ce diaporama vise à sensibiliser les utilisateurs, qu'ils soient novices ou expérimentés, à l'importance de sécuriser leurs données et leurs appareils. j'y  aborde des thèmes tels que la gestion des mots de passe, la reconnaissance des tentatives de phishing, les mises à jour logicielles régulières, et les principes de sauvegarde des données. L'objectif est de fournir des conseils pratiques et accessibles pour minimiser les risques liés aux cyberattaques et garantir une utilisation sécurisée des outils numériques, tant dans un cadre personnel que professionnel.</p>
+               
+            </div>
+
+            <!-- Mockups à droite -->
+            <div class="device-mockup">
+                <img src="https://th.bing.com/th/id/OIP.wteYy6WW8uYdTVhEOKdj2AHaD_?rs=1&pid=ImgDetMain" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Mentions légales - Tous droits réservés
+    </footer>
+</body>
+</html>

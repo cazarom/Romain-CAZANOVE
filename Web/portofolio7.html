@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Empêche le défilement */
+            font-family: Arial, sans-serif;
+            background-color: #0f172a; /* Bleu foncé */
+            color: white;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            flex-shrink: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteneur principal centré */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 150px); /* Ajuste la hauteur pour ne pas chevaucher le footer */
+            text-align: center;
+        }
+
+        .message {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #0a0e1a;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CAZANOVE ROMAIN</h1>
+        <p>Étudiant en 1re année en réseaux et télécommunications</p>
+    </header>
+
+    <nav>
+        <a href="portofolio6.html" id="back">
+            <span class="arrow">←</span> Retour
+        </a>
+        <a href="SAE104_RC.html" id="next">
+            retour à l'accueil <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="message">Merci de votre attention</div>
+    </div>
+
+    <div class="footer">
+        © 2024 Mon Site Web | <a href="#" style="color: lightblue;">Mentions Légales</a>
+    </div>
+</body>
+</html>

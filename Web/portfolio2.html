@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Permet de pousser le footer en bas */
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style du header principal */
+        header {
+            background-color: #ff3366;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Flèche décorative */
+        header::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-color: #fff transparent transparent transparent;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Barre de navigation simplifiée */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Icônes de flèche */
+        .arrow {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        /* Style du sous-titre */
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 40px 0;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grand Titre -->
+    <header>
+        <h1>PORTFOLIO</h1>
+        
+    </header>
+
+    <!-- Barre de Navigation -->
+    <nav>
+        <a href="portfolio.html" id="back">
+            <span class="arrow">←</span> Retour
+        </a>
+        <a href="portfolio3.html" id="next">
+            Suite <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <!-- À propos de moi -->
+    <section class="about-section">
+        <h2>À propos de moi</h2>
+        <p>
+            Je m'appelle Cazanove Romain, étudiant en première année de BUT Réseaux et Télécommunications à La Réunion. Ambitieux et passionné par la cybersécurité, je vise à devenir Responsable de la Sécurité des Systèmes d'Information (RSSI) ou adjoint RSSI. Curieux et motivé, je m'investis pleinement dans mes études pour développer des compétences solides en sécurité des réseaux, gestion des risques et protection des infrastructures numériques critiques.
+        </p>
+      
+    </section>
+
+    <!-- Mentions légales en bas -->
+    <footer>
+        <p>&copy; 2024 Mon Site Web | <a href="">Mentions Légales</a></p>
+    </footer>
+</body>
+</html>
